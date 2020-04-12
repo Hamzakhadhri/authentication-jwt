@@ -10,11 +10,12 @@ public class JwtResponse {
 	    private String account;
 	    private String name;
 	    private String role;
-
-	    public JwtResponse(String token, String account, String name, String role) {
+	    private Boolean status ; 
+	    public JwtResponse(String token, String account, String name, String role, Boolean Status ) {
 	        this.account = account;
 	        this.name = name;
 	        this.token = token;
 	        this.role = role;
+	        this.status=true;
 	    }
 }
